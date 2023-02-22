@@ -1,0 +1,32 @@
+/*! Menu inicial */
+
+body{
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        width: 100%;
+        margin: auto;
+    }
+    .menu button{
+        position: relative;
+        right: inherit;
+        float: right;
+        margin-left: auto;
+        height: 33px
+    }
+
+}
+
+.menu{
+    height: 20%
+}
+
+.menu button{
+    position: relative;
+    right: inherit;
+    float: right;
+    margin-left: auto;
+}

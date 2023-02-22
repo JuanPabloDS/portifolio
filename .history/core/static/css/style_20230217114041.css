@@ -1,0 +1,12 @@
+/*! Menu inicial */
+
+.menu{
+    
+}
+
+.menu button{
+    position: relative;
+    right: inherit;
+    float: right;
+    margin-left: auto;
+}

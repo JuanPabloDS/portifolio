@@ -1,0 +1,57 @@
+/*! Menu inicial */
+
+body{
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        width: 100%;
+        margin: auto;
+    }
+
+}
+
+.menu{
+    height: 20%
+}
+
+.menu button{
+    position: relative;
+    right: inherit;
+    float: right;
+    margin-left: auto;
+}
+
+.menu-itens {
+    height: 80px;
+    background-color: blue;
+    text-align: center;
+    padding-top: 13px;
+    margin-bottom: 10px;
+    font-size: 50%;
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    .menu button{
+        position: relative;
+        right: inherit;
+        float: right;
+        margin-left: auto;
+        height: 35px;
+    }
+
+    .menu-itens {
+        height: 30px;
+        background-color: blue;
+    }
+
+    .menu-itens h1 {
+        padding-top: 5px;
+        font-size: 150%;
+    }
+}

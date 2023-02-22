@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portifólio</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+    </head>
+
+    <body>
+        <div class="pos-f-t">
+            <nav class="navbar navbar-dark menu">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                
+            <div class="col-md-1 small-border">
+  <svg width='100%' height='100%' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'>
+  <path stroke='rgba(60,60,60,0.9)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/>
+  </svg>
+  </div> 
+              </button>
+            </nav>
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-dark p-4">
+                <div class="menu-itens">
+                  <h1>HOME</h1>
+                </div>
+                <div class="menu-itens">
+                  <h1>HOME</h1>
+                </div>
+                <div class="menu-itens">
+                  <h1>HOME</h1>
+                </div>
+                <div class="menu-itens">
+                  <h1>HOME</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+{% block content %}
+{% endblock %}

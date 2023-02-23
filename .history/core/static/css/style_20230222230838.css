@@ -357,15 +357,9 @@ body{
 }
 
 .dev-menu {
-    margin-top: 30px;
     display: flex;
-    flex-direction: row ;
+    flex-direction: column ;
     flex-wrap: wrap;
-}
-
-.dev-menu button {
-    width: 250px;
-    height: 50px;
 }
 
 

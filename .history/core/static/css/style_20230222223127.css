@@ -142,13 +142,10 @@ body{
 @media screen and (max-width: 600px){
     .menu button{
         position: relative;
-        padding-top: 0;
         right: inherit;
-        padding-right: 0;
-        padding-left: 5px;
-        padding-bottom: 0;
-        width: 60px;
-        height: 50px;
+        float: right;
+        margin-left: auto;
+        height: 35px;
     }
 
     .menu-itens {
@@ -162,8 +159,8 @@ body{
     }
 
     .burger i {
-        width:25px;
-        height:2px;
+        width:30px;
+        height:1px;
        }
 }
 
@@ -336,36 +333,6 @@ body{
         font-size: 15px;
     }
 
-}
-
-/*! Fim Apresetação */
-
-/*! Developer */
-
-.dev-1 {
-    margin-top: 70px;
-    height: 100px;
-    background-color: black;
-    padding-top: 20px;
-    padding-left: 70px;
-}
-
-.dev-1 h1 {
-    color: rgb(232, 228, 228);
-    font-weight: bold;
-
-}
-
-.dev-menu {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row ;
-    flex-wrap: wrap;
-}
-
-.dev-menu button {
-    width: 250px;
-    height: 50px;
 }
 
 

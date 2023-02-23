@@ -15,7 +15,9 @@ body{
 }
 
 .burger {
-    
+    position: fixed;
+    right: 83px;
+    top: 35px;
     z-index: 9998;
     cursor: pointer;
     padding: 5px 4px;
@@ -27,87 +29,7 @@ body{
     width: 42px;
     height: 2px;
     margin: 8px;
-    background-color: black;
-}
-
-.burger:active,
-.burger:focus {
- outline-color:0;
- outline-style:none;
- outline-width:0
-}
-.burger i {
- display:block;
- width:42px;
- height:2px;
- margin:8px;
- background-color:black
-}
-
-.burger i:nth-child(n) {
- -moz-transition:-moz-transform .45s cubic-bezier(.43,.77,.15,1.5),background .3s ease;
- -o-transition:-o-transform .45s cubic-bezier(.43,.77,.15,1.5),background .3s ease;
- -webkit-transition:-webkit-transform .45s cubic-bezier(.43,.77,.15,1.5),background .3s ease;
- transition:transform .45s cubic-bezier(.43,.77,.15,1.5),background .3s ease
-}
-.burger.hover i:nth-child(1) {
- -moz-transform:translate3d(0,-4px,0);
- -ms-transform:translate3d(0,-4px,0);
- -webkit-transform:translate3d(0,-4px,0);
- transform:translate3d(0,-4px,0)
-}
-.burger.hover i:nth-child(3) {
- -moz-transform:translate3d(0,4px,0);
- -ms-transform:translate3d(0,4px,0);
- -webkit-transform:translate3d(0,4px,0);
- transform:translate3d(0,4px,0)
-}
-.burger.st-1 {
- animation:rotate-back-in .8s cubic-bezier(.2,.86,.35,1) forwards;
- -webkit-animation:rotate-back-in .8s cubic-bezier(.2,.86,.35,1) forwards
-}
-.burger.st-1 i:nth-child(1) {
- -moz-transform:translate3d(0,9px,0);
- -ms-transform:translate3d(0,9px,0);
- -webkit-transform:translate3d(0,9px,0);
- transform:translate3d(0,9px,0)
-}
-.burger.st-1 i:nth-child(3) {
- -moz-transform:translate3d(0,-9px,0);
- -ms-transform:translate3d(0,-9px,0);
- -webkit-transform:translate3d(0,-9px,0);
- transform:translate3d(0,-9px,0)
-}
-.burger.st-2 {
- animation:rotate-back-out .85s cubic-bezier(.2,.86,.35,1) forwards;
- -webkit-animation:rotate-back-out .85s cubic-bezier(.2,.86,.35,1) forwards
-}
-.burger.st-2 i:nth-child(1) {
- -moz-transform:translate3d(0,10px,0) rotate(45deg) scale(1.5);
- -ms-transform:translate3d(0,10px,0) rotate(45deg) scale(1.5);
- -webkit-transform:translate3d(0,10px,0) rotate(45deg) scale(1.5);
- transform:translate3d(0,10px,0) rotate(45deg) scale(1.5)
-}
-.burger.st-2 i:nth-child(2) {
- opacity:0
-}
-.burger.st-2 i:nth-child(3) {
- -moz-transform:translate3d(0,-10px,0) rotate(-45deg) scale(1.5);
- -ms-transform:translate3d(0,-10px,0) rotate(-45deg) scale(1.5);
- -webkit-transform:translate3d(0,-10px,0) rotate(-45deg) scale(1.5);
- transform:translate3d(0,-10px,0) rotate(-45deg) scale(1.5)
-}
-.burger.st-2.hover i:nth-child(1) {
- -moz-transform:translate3d(0,10px,0) rotate(50deg) scale(1.5);
- -ms-transform:translate3d(0,10px,0) rotate(50deg) scale(1.5);
- -webkit-transform:translate3d(0,10px,0) rotate(50deg) scale(1.5);
- transform:translate3d(0,10px,0) rotate(50deg) scale(1.5)
-}
-.burger.st-2.hover i:nth-child(3) {
- -moz-transform:translate3d(0,-10px,0) rotate(-50deg) scale(1.5);
- -ms-transform:translate3d(0,-10px,0) rotate(-50deg) scale(1.5);
- -webkit-transform:translate3d(0,-10px,0) rotate(-50deg) scale(1.5);
- transform:translate3d(0,-10px,0) rotate(-50deg) scale(1.5)
+    background-color: #7a7a7a;
 }
 
 .menu{
@@ -142,13 +64,10 @@ body{
 @media screen and (max-width: 600px){
     .menu button{
         position: relative;
-        padding-top: 0;
         right: inherit;
-        padding-right: 0;
-        padding-left: 5px;
-        padding-bottom: 0;
-        width: 60px;
-        height: 50px;
+        float: right;
+        margin-left: auto;
+        height: 35px;
     }
 
     .menu-itens {
@@ -160,11 +79,6 @@ body{
         font-size: 150%;
         line-height: 0.2;
     }
-
-    .burger i {
-        width:25px;
-        height:2px;
-       }
 }
 
 /*! Fim Menu inicial */
@@ -336,36 +250,6 @@ body{
         font-size: 15px;
     }
 
-}
-
-/*! Fim Apresetação */
-
-/*! Developer */
-
-.dev-1 {
-    margin-top: 70px;
-    height: 100px;
-    background-color: black;
-    padding-top: 20px;
-    padding-left: 70px;
-}
-
-.dev-1 h1 {
-    color: rgb(232, 228, 228);
-    font-weight: bold;
-
-}
-
-.dev-menu {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row ;
-    flex-wrap: wrap;
-}
-
-.dev-menu button {
-    width: 250px;
-    height: 50px;
 }
 
 

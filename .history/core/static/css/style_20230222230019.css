@@ -352,20 +352,7 @@ body{
 
 .dev-1 h1 {
     color: rgb(232, 228, 228);
-    font-weight: bold;
 
-}
-
-.dev-menu {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row ;
-    flex-wrap: wrap;
-}
-
-.dev-menu button {
-    width: 250px;
-    height: 50px;
 }
 
 

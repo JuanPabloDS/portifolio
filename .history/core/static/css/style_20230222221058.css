@@ -41,9 +41,8 @@ body{
  width:42px;
  height:2px;
  margin:8px;
- background-color:black
+ background-color:#7a7a7a
 }
-
 .burger i:nth-child(n) {
  -moz-transition:-moz-transform .45s cubic-bezier(.43,.77,.15,1.5),background .3s ease;
  -o-transition:-o-transform .45s cubic-bezier(.43,.77,.15,1.5),background .3s ease;
@@ -142,13 +141,10 @@ body{
 @media screen and (max-width: 600px){
     .menu button{
         position: relative;
-        padding-top: 0;
         right: inherit;
-        padding-right: 0;
-        padding-left: 5px;
-        padding-bottom: 0;
-        width: 60px;
-        height: 50px;
+        float: right;
+        margin-left: auto;
+        height: 35px;
     }
 
     .menu-itens {
@@ -160,11 +156,6 @@ body{
         font-size: 150%;
         line-height: 0.2;
     }
-
-    .burger i {
-        width:25px;
-        height:2px;
-       }
 }
 
 /*! Fim Menu inicial */
@@ -336,36 +327,6 @@ body{
         font-size: 15px;
     }
 
-}
-
-/*! Fim Apresetação */
-
-/*! Developer */
-
-.dev-1 {
-    margin-top: 70px;
-    height: 100px;
-    background-color: black;
-    padding-top: 20px;
-    padding-left: 70px;
-}
-
-.dev-1 h1 {
-    color: rgb(232, 228, 228);
-    font-weight: bold;
-
-}
-
-.dev-menu {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row ;
-    flex-wrap: wrap;
-}
-
-.dev-menu button {
-    width: 250px;
-    height: 50px;
 }
 
 

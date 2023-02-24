@@ -1,0 +1,429 @@
+/*! Menu inicial */
+
+body{
+    width: 80%;
+    margin: auto;
+    height: 1500px;
+    background-color: #f2db9c;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        width: 100%;
+        margin: auto;
+    }
+
+}
+
+.burger {
+    
+    z-index: 9998;
+    cursor: pointer;
+    padding: 5px 4px;
+    background-color: transparent;
+}
+
+.burger i {
+    display: block;
+    width: 42px;
+    height: 2px;
+    margin: 8px;
+    background-color: black;
+}
+
+.burger:active,
+.burger:focus {
+ outline-color:0;
+ outline-style:none;
+ outline-width:0
+}
+.burger i {
+ display:block;
+ width:42px;
+ height:2px;
+ margin:8px;
+ background-color:black
+}
+
+.burger i:nth-child(n) {
+ -moz-transition:-moz-transform .45s cubic-bezier(.43,.77,.15,1.5),background .3s ease;
+ -o-transition:-o-transform .45s cubic-bezier(.43,.77,.15,1.5),background .3s ease;
+ -webkit-transition:-webkit-transform .45s cubic-bezier(.43,.77,.15,1.5),background .3s ease;
+ transition:transform .45s cubic-bezier(.43,.77,.15,1.5),background .3s ease
+}
+.burger.hover i:nth-child(1) {
+ -moz-transform:translate3d(0,-4px,0);
+ -ms-transform:translate3d(0,-4px,0);
+ -webkit-transform:translate3d(0,-4px,0);
+ transform:translate3d(0,-4px,0)
+}
+.burger.hover i:nth-child(3) {
+ -moz-transform:translate3d(0,4px,0);
+ -ms-transform:translate3d(0,4px,0);
+ -webkit-transform:translate3d(0,4px,0);
+ transform:translate3d(0,4px,0)
+}
+.burger.st-1 {
+ animation:rotate-back-in .8s cubic-bezier(.2,.86,.35,1) forwards;
+ -webkit-animation:rotate-back-in .8s cubic-bezier(.2,.86,.35,1) forwards
+}
+.burger.st-1 i:nth-child(1) {
+ -moz-transform:translate3d(0,9px,0);
+ -ms-transform:translate3d(0,9px,0);
+ -webkit-transform:translate3d(0,9px,0);
+ transform:translate3d(0,9px,0)
+}
+.burger.st-1 i:nth-child(3) {
+ -moz-transform:translate3d(0,-9px,0);
+ -ms-transform:translate3d(0,-9px,0);
+ -webkit-transform:translate3d(0,-9px,0);
+ transform:translate3d(0,-9px,0)
+}
+.burger.st-2 {
+ animation:rotate-back-out .85s cubic-bezier(.2,.86,.35,1) forwards;
+ -webkit-animation:rotate-back-out .85s cubic-bezier(.2,.86,.35,1) forwards
+}
+.burger.st-2 i:nth-child(1) {
+ -moz-transform:translate3d(0,10px,0) rotate(45deg) scale(1.5);
+ -ms-transform:translate3d(0,10px,0) rotate(45deg) scale(1.5);
+ -webkit-transform:translate3d(0,10px,0) rotate(45deg) scale(1.5);
+ transform:translate3d(0,10px,0) rotate(45deg) scale(1.5)
+}
+.burger.st-2 i:nth-child(2) {
+ opacity:0
+}
+.burger.st-2 i:nth-child(3) {
+ -moz-transform:translate3d(0,-10px,0) rotate(-45deg) scale(1.5);
+ -ms-transform:translate3d(0,-10px,0) rotate(-45deg) scale(1.5);
+ -webkit-transform:translate3d(0,-10px,0) rotate(-45deg) scale(1.5);
+ transform:translate3d(0,-10px,0) rotate(-45deg) scale(1.5)
+}
+.burger.st-2.hover i:nth-child(1) {
+ -moz-transform:translate3d(0,10px,0) rotate(50deg) scale(1.5);
+ -ms-transform:translate3d(0,10px,0) rotate(50deg) scale(1.5);
+ -webkit-transform:translate3d(0,10px,0) rotate(50deg) scale(1.5);
+ transform:translate3d(0,10px,0) rotate(50deg) scale(1.5)
+}
+.burger.st-2.hover i:nth-child(3) {
+ -moz-transform:translate3d(0,-10px,0) rotate(-50deg) scale(1.5);
+ -ms-transform:translate3d(0,-10px,0) rotate(-50deg) scale(1.5);
+ -webkit-transform:translate3d(0,-10px,0) rotate(-50deg) scale(1.5);
+ transform:translate3d(0,-10px,0) rotate(-50deg) scale(1.5)
+}
+
+.menu{
+    height: 20%;
+    background-color: #f2db9c;
+    color: black;
+}
+
+.menu button{
+    position: relative;
+    right: inherit;
+    float: right;
+    margin-left: auto;
+    color: black;
+}
+
+.menu span {
+    color: black;
+}
+
+
+
+.menu-itens {
+    height: 80px;
+    background-color: blue;
+    text-align: center;
+    padding-top: 13px;
+    margin-bottom: 10px;
+    font-size: 50%;
+}
+
+@media screen and (max-width: 600px){
+    .menu button{
+        position: relative;
+        padding-top: 0;
+        right: inherit;
+        padding-right: 0;
+        padding-left: 5px;
+        padding-bottom: 0;
+        width: 60px;
+        height: 50px;
+    }
+
+    .menu-itens {
+        height: 30px;
+        background-color: blue;
+    }
+
+    .menu-itens h1 {
+        font-size: 150%;
+        line-height: 0.2;
+    }
+
+    .burger i {
+        width:25px;
+        height:2px;
+       }
+}
+
+/*! Fim Menu inicial */
+
+/*! Perfil */
+
+.perfil{
+    padding-top: 40px;
+    padding-left: 80px;
+    margin-bottom: 200px;
+}
+
+.perfil img {
+    width: 140px;
+    height: 140px;
+    float: left;
+}
+
+.perfil h1 {
+    margin-left: 50px;
+    position: absolute;
+    font-weight: bold;
+
+
+}
+.borda{
+    position: relative;
+    padding-left: 145px;
+}
+
+.borda::before, .borda::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(130px);
+    height: calc(10px);
+    top: 60px;
+    background: linear-gradient(45deg, #0099ff, #cdff04, #00ff00, #043903 );
+    margin-left: 50px;
+    background-size: 300%;
+    animation: AnimarBorda 8s linear infinite;
+    
+}
+
+@keyframes AnimarBorda {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 300%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .perfil {
+        padding-left: 20px;
+        margin-bottom: 100px;
+    
+    }
+    .perfil img {
+        width: 60px;
+        height: 60px;
+    }
+    .perfil h1 {
+        font-size: 30px;
+    }
+
+    .borda{
+        padding-left: 30px;
+    }
+
+    .borda::before, .borda::after{
+        margin-left: 20px;
+        top: 40px;
+
+    }
+
+}
+
+/*! Fim Perfil */
+
+/*! Apresentaçao */
+
+.apresentacao{
+    background-color: #f2e5c0;
+    padding: 70px;
+    position: relative;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    background: linear-gradient(45deg,#0099ff, #cdff04, #00ff00, #043903
+    );
+    animation-name: ring;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+@keyframes ring {
+    0%{
+        tranform:rotate(-360deg)
+    }
+}
+
+}
+
+.texto {
+    display: flex;
+    flex-direction: column ;
+    flex-wrap: wrap;
+}
+
+.texto h1 {
+    margin-left: 20px;
+    font-weight: bold;
+    float: left;
+    align-self: stretch;
+}
+
+.texto img {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.paragrafo p {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.icons{
+    position: fixed;
+    padding-bottom: 23%;
+    padding-left: 5px;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+}
+
+.icons img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .icons{
+        width: 20px;
+    }
+
+    .icons img{
+        width: 20px;
+        height: 20px;
+        margin-bottom: 5px;
+    }
+
+    .texto h1 {
+        font-size: 20px;
+    }
+
+    .texto img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .paragrafo p {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+}
+
+/*! Fim Apresetação */
+
+/*! Developer */
+
+.dev-1 {
+    margin-top: 70px;
+    height: 100px;
+    background-color: black;
+    padding-top: 20px;
+    padding-left: 70px;
+}
+
+.dev-1 h1 {
+    color: rgb(232, 228, 228);
+    font-weight: bold;
+
+}
+
+.dev-menu {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+}
+
+.dev-menu button {
+    width: 250px;
+    height: 50px;
+}
+
+.but-1 {
+    color: #00ff00;
+}
+
+/* CSS */
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#00ff00, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(65, 252, 96, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: green;
+  padding: 13px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+
+
+
+

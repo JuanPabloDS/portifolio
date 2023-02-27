@@ -210,12 +210,3 @@ main {
   font-size: 20px;
   letter-spacing: 5px
 }
-
-.borda p {
-  margin-top: 20px;
-  font-size: 19px;
-  font-weight: bold;
-  color: rgb(61, 59, 59);
-  text-align: justify;
-
-}

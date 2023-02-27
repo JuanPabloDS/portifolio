@@ -147,22 +147,11 @@ main {
     background: #fff;
     margin: 4px;
     transition: 0.3s;
-    width: 25px;
     }
 
   .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-4px, 2px);
+    transform: rotate(-45deg) translate(-2px, 3px);
   }
-
-  .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-8px, -6px);
-  }
-
-  .nav-list a {
-    font-size: 10px;
-  }
-
-
 }
 
 
@@ -187,14 +176,8 @@ main {
     float: right;
 }
 
-.apresentacao {
-  width: 50%;
-}
-
 .borda{
-  display: flex;
-  flex-direction: column ;
-  flex-wrap: wrap;
+
 }
 
 .borda h1 {
@@ -202,20 +185,4 @@ main {
     color: white;
     font-size: 60px;
     letter-spacing: 5px
-}
-
-.borda h3 {
-  font-weight: bold;
-  color: white;
-  font-size: 20px;
-  letter-spacing: 5px
-}
-
-.borda p {
-  margin-top: 20px;
-  font-size: 19px;
-  font-weight: bold;
-  color: rgb(61, 59, 59);
-  text-align: justify;
-
 }

@@ -17,8 +17,16 @@
         <div class="pos-f-t">
           <header>
             <nav>
+              <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
               <ul class="nav-list">
                 <div class="mobile-menu-ex">
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
                 </div>
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Sobre</a></li>
@@ -27,15 +35,14 @@
               </ul>
             </nav>
           </header>
-        </div>
-        <div class="menu-icon">
+          <div class="page">
+            <div style="position: fixed; width:200px; height: 200px; background-color: black;  z-index:9;
+            top:0;">
             <div class="mobile-menu">
               <div class="line1"></div>
               <div class="line2"></div>
               <div class="line3"></div>
             </div>
           </div>
-          <div class="page">
-            
 {% block content %}
 {% endblock %}

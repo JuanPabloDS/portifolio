@@ -195,6 +195,7 @@ main {
   display: flex;
   flex-direction: column ;
   flex-wrap: wrap;
+  width: 40%;
 }
 
 .borda h1 {
@@ -209,13 +210,4 @@ main {
   color: white;
   font-size: 20px;
   letter-spacing: 5px
-}
-
-.borda p {
-  margin-top: 20px;
-  font-size: 19px;
-  font-weight: bold;
-  color: rgb(61, 59, 59);
-  text-align: justify;
-
 }

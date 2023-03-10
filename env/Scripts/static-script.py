@@ -1,4 +1,4 @@
-#!D:\drive\portifolio\env\Scripts\python.exe
+#!E:\suporte\drive\portifolio\env\Scripts\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'static3==0.7.0','console_scripts','static'
 import re
 import sys

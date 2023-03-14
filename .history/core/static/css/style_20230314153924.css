@@ -174,21 +174,14 @@ main {
     display: flex;
     flex-direction: row ;
     flex-wrap: wrap;
+    
 }
 
 .imagem{
-  display: flex;
-  flex-direction: row ;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  margin-top: 70px;
-  margin-bottom: 50px;
-  align-items: end;
+  margin-left: 100%;
 }
 
 .imagem img {
-  margin-left: 100%;
     width: 550px;
     height: 550px;
     float: right;
@@ -228,11 +221,8 @@ main {
   display: flex;
   flex-direction: row ;
   flex-wrap: wrap;
-  flex-flow: row wrap;
-  justify-content: flex-end;
   margin-top: 70px;
   margin-bottom: 50px;
-
 }
 
 .borda{

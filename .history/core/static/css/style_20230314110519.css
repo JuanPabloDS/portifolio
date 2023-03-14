@@ -177,18 +177,11 @@ main {
 }
 
 .imagem{
-  display: flex;
-  flex-direction: row ;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  margin-top: 70px;
-  margin-bottom: 50px;
-  align-items: end;
+    margin-left: auto;
 }
 
 .imagem img {
-  margin-left: 100%;
+    margin-top: 50px;
     width: 550px;
     height: 550px;
     float: right;
@@ -207,32 +200,21 @@ main {
   margin-top: 20px;
 }
 .perfil-p{
-  width: 400px;
+  width: 50%;
+  height: 50px;
   margin-top: 20px;
   font-size: 19px;
-  color: white;
+  color: #142283;
   text-align: justify;
   padding-left: 10px;
-  text-shadow: rgb(114, 106, 106) 0.05em 0.05em 0.1em;
+  text-shadow: rgb(82, 74, 74) 0.02em 0.02em 0.01em;
 }
-
 
 .apresentacao {
   width: 100%;
   display: flex;
   flex-direction: column ;
   flex-wrap: wrap;
-}
-
-.show{
-  display: flex;
-  flex-direction: row ;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  margin-top: 70px;
-  margin-bottom: 50px;
-
 }
 
 .borda{
@@ -245,20 +227,14 @@ main {
     font-weight: bold;
     color: white;
     font-size: 60px;
-    letter-spacing: 5px;
-    text-shadow: rgb(114, 106, 106) 0.05em 0.05em 0.1em;
-
+    letter-spacing: 5px
 }
 
 .borda h3 {
   font-weight: bold;
   color: white;
   font-size: 20px;
-  letter-spacing: 5px;
-  padding-bottom: 15px;
-  text-shadow: rgb(114, 106, 106) 0.05em 0.05em 0.1em;
-  
-
+  letter-spacing: 5px
 }
 .icons{
   position: fixed;

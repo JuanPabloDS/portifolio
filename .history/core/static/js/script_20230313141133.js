@@ -64,7 +64,7 @@ function typeWriter(el) {
         setTimeout(() => (el.innerHTML += letter), 95 * i)
     );
 
-    setInterval(() => typeWriter(el), 25000);
+    setInterval(() => typeWriter(el), 16000);
 }
 
 typeWriter(elementEl);

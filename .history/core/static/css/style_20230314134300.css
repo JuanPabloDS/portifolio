@@ -177,18 +177,11 @@ main {
 }
 
 .imagem{
-  display: flex;
-  flex-direction: row ;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  margin-top: 70px;
-  margin-bottom: 50px;
-  align-items: end;
+    margin-left: auto;
 }
 
 .imagem img {
-  margin-left: 100%;
+    margin-top: 50px;
     width: 550px;
     height: 550px;
     float: right;
@@ -207,7 +200,8 @@ main {
   margin-top: 20px;
 }
 .perfil-p{
-  width: 400px;
+  width: 50%;
+  height: 50px;
   margin-top: 20px;
   font-size: 19px;
   color: white;
@@ -216,23 +210,16 @@ main {
   text-shadow: rgb(114, 106, 106) 0.05em 0.05em 0.1em;
 }
 
-
+.perfil-p p{
+  border-bottom: 2px;
+  border-color: #000;
+  border-style: solid ;
+}
 .apresentacao {
   width: 100%;
   display: flex;
   flex-direction: column ;
   flex-wrap: wrap;
-}
-
-.show{
-  display: flex;
-  flex-direction: row ;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  margin-top: 70px;
-  margin-bottom: 50px;
-
 }
 
 .borda{
@@ -255,9 +242,7 @@ main {
   color: white;
   font-size: 20px;
   letter-spacing: 5px;
-  padding-bottom: 15px;
   text-shadow: rgb(114, 106, 106) 0.05em 0.05em 0.1em;
-  
 
 }
 .icons{

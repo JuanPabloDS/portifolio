@@ -177,14 +177,7 @@ main {
 }
 
 .imagem{
-  display: flex;
-  flex-direction: row ;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  margin-top: 70px;
-  margin-bottom: 50px;
-  align-items: end;
+
 }
 
 .imagem img {
@@ -228,11 +221,8 @@ main {
   display: flex;
   flex-direction: row ;
   flex-wrap: wrap;
-  flex-flow: row wrap;
-  justify-content: flex-end;
   margin-top: 70px;
   margin-bottom: 50px;
-
 }
 
 .borda{

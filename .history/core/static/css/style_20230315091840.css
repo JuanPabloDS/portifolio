@@ -3,14 +3,10 @@
 
 body{   
     margin: auto;
-    height: 100%;
+    height: 1500px;
+    background:  linear-gradient( -0.2turn, #0d124a, #20d19e );
     font-family: 'Poppins', sans-serif;
-    background: -webkit-linear-gradient(270deg, #011e24, #133036 90%);
-  }
-
-
-* {
-  scrollbar-color: #454a4d #202324;
+    
 }
 
 .hidden {
@@ -52,15 +48,9 @@ nav {
   display: flex;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: #011e24;
-  height: 73px;
-  position: fixed;
-  width: 100%;
-}
-
-.nav-margin {
-  height: 73px;
-  width: 100%;
+  background: transparent;
+  height: 8vh;
+  
 }
 
 main {
@@ -84,12 +74,6 @@ main {
   justify-content: space-around;
   transform: translateX(100%);
   transition: transform 0.3s ease-in;
-}
-
-.span {
-  color: white;
-
-  margin-left: 10%;
 }
 
 .nav-list li {
@@ -148,7 +132,7 @@ main {
 }
 
 .menu-icon {
-  position: fixed;
+  position: absolute;
   z-index:10;
   top:0;
   margin-top: 20px;
@@ -201,34 +185,22 @@ main {
   margin-top: 70px;
   margin-bottom: 50px;
   align-items: end;
-  width: auto;
-  height: auto;
 }
 
 .imagem img {
 
-    width: 520px;
-    height: 520px;
+    width: 550px;
+    height: 550px;
     float: right;
     -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
     filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
 }
-
-
 
 .perfil-img {
   width: 150px;
   height: 150px;
   border-radius: 100%;
 }
-
-.perfil-img:hover {
-  -webkit-transform: scale(2.3);
-  -ms-transform: scale(2.3);
-  transform: scale(1.3);
-}
-
-
 
 .perfil-div{
   margin-left: 15px;
@@ -237,7 +209,7 @@ main {
 .perfil-p{
   width: 400px;
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 19px;
   color: white;
   text-align: justify;
   padding-left: 10px;
@@ -257,10 +229,9 @@ main {
   flex-direction: row ;
   flex-wrap: wrap;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-top: 70px;
   margin-bottom: 50px;
-  width: 100%;
 
 }
 
@@ -282,7 +253,7 @@ main {
 .borda h3 {
   font-weight: bold;
   color: white;
-  font-size: 17px;
+  font-size: 20px;
   letter-spacing: 5px;
   padding-bottom: 15px;
   text-shadow: rgb(114, 106, 106) 0.05em 0.05em 0.1em;
@@ -336,7 +307,6 @@ main {
   content: '|';
   margin-left: 5px;
   animation: blink 0.7s infinite;
-  
 }
 
 @keyframes blink {

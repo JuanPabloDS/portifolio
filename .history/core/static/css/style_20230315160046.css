@@ -88,8 +88,7 @@ main {
 
 .span {
   color: white;
-
-  margin-left: 10%;
+  font-weight: bold;
 }
 
 .nav-list li {

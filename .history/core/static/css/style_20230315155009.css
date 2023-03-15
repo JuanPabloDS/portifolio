@@ -86,12 +86,6 @@ main {
   transition: transform 0.3s ease-in;
 }
 
-.span {
-  color: white;
-
-  margin-left: 10%;
-}
-
 .nav-list li {
   letter-spacing: 3px;
   margin-left: 0;

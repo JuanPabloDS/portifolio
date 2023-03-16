@@ -254,9 +254,10 @@ main {
   color: white;
   text-align: justify;
   padding-left: 10px;
+  text-shadow: rgb(114, 106, 106) 0.05em 0.05em 0.1em;
 }
 .perfil-p p {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .perfil-p h2 {
   font-weight: 600;

@@ -5,6 +5,7 @@ body{
     margin: auto;
     height: 100%;
     font-family: 'Poppins', sans-serif;
+    background: -webkit-linear-gradient(270deg, #011e24, #133036 90%);
   }
 
 
@@ -26,8 +27,8 @@ main{
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
-    background: -webkit-linear-gradient(270deg, #011e24, #133036 90%);
-    height: 50vw;
+    background-color: black;
+    height: 100%;
 }
 
 
@@ -223,10 +224,6 @@ main {
     filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
 }
 
-.svg {
-  background-color: #133036;
-}
-
 
 
 .perfil-img {
@@ -254,16 +251,7 @@ main {
   color: white;
   text-align: justify;
   padding-left: 10px;
-}
-.perfil-p p {
-  margin-bottom: 20px;
-}
-.perfil-p h2 {
-  font-weight: 600;
-}
-
-.h2 {
-  color: #0bc7a0;
+  text-shadow: rgb(114, 106, 106) 0.05em 0.05em 0.1em;
 }
 
 
@@ -280,16 +268,10 @@ main {
   flex-wrap: wrap;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin-top: 20%;
+  margin-top: 70px;
   margin-bottom: 50px;
   width: 100%;
-}
 
-.nome {
-  color: #0bc7a0;
-  font-weight: 600;
-  font-size: inherit;
-  letter-spacing: 0.02rem;
 }
 
 .borda{

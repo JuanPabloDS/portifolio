@@ -254,16 +254,7 @@ main {
   color: white;
   text-align: justify;
   padding-left: 10px;
-}
-.perfil-p p {
-  margin-bottom: 20px;
-}
-.perfil-p h2 {
-  font-weight: 600;
-}
-
-.h2 {
-  color: #0bc7a0;
+  text-shadow: rgb(114, 106, 106) 0.05em 0.05em 0.1em;
 }
 
 
@@ -287,9 +278,6 @@ main {
 
 .nome {
   color: #0bc7a0;
-  font-weight: 600;
-  font-size: inherit;
-  letter-spacing: 0.02rem;
 }
 
 .borda{

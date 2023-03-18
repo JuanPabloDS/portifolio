@@ -212,8 +212,8 @@ main {
 
 .imagem img {
 
-    width: 400px;
-    height: 400px;
+    width: 520px;
+    height: 520px;
     float: right;
     -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
     filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
@@ -350,8 +350,8 @@ main {
   }
   .imagem img {
     margin-top: 3vw;
-    width: 50vw;
-    height: 50vw;
+    width: 450px;
+    height: 450px;
 
   }
 }

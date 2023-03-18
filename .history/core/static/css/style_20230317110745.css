@@ -27,7 +27,7 @@ main{
     padding-left: 10%;
     padding-right: 10%;
     background: -webkit-linear-gradient(270deg, #011e24, #133036 90%);
-
+    height: 50vw;
 }
 
 
@@ -212,8 +212,8 @@ main {
 
 .imagem img {
 
-    width: 400px;
-    height: 400px;
+    width: 520px;
+    height: 520px;
     float: right;
     -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
     filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
@@ -276,7 +276,8 @@ main {
   flex-wrap: wrap;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin-top: 10vw;
+  margin-top: 20%;
+  margin-bottom: 50px;
   width: 100%;
 }
 

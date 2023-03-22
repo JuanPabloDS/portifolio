@@ -57,5 +57,47 @@ class MobileNavbar {
 
 'use strict';
 
+// SVG
+
+const clima = document.getElementById("change")
+const fill = clima.getAttribute("fill")
+
+console.log(fill)
+
+
+var colors = ["#a09fa5", "#a09fa5"];//Array com as cores, pode adicionar contas quiser
+var i = 0;
+
+const change = document.querySelector('.change');
+let counter = 0;
+
+const colorArr = ["#a09fa5", "#f1ca6e"]
+
+function sleep(milliseconds) {
+  return new Promise(resolve => setTimeout(resolve, milliseconds))
+}
+
+async function main() {
+
+  await sleep(2000);
+  change.style.fill = colorArr[0]
+  setInterval(
+    ()=> {
+      counter++
+      
+      if (counter == colorArr.length) {
+        counter = 0
+      }
+      change.style.fill = colorArr[counter];
+    }, 6000
+  )
+
+}
+
+main();
+
+
+
+
 
 

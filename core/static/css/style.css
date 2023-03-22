@@ -329,32 +329,63 @@ main {
 
 /* SVG */
 
+#change {
+  animation: change 6s infinite;
+  transform-origin: center;
+}
+
+@keyframes change {
+  0% {
+    transform: rotateZ(0deg);
+
+  }
+  30% {
+    transform: rotateZ(100deg);
+
+  }
+  40%, 50% {
+    opacity: 0;
+  }
+  90%, 100% {
+    transform: rotateZ(360deg);
+  }
+}
+
 #code1 {
-  animation: code 2s ease infinite;
+  animation: code 3s ease infinite;
 }
 
 @keyframes code {
-  from{
-    width: 0px;
+  20%, 100% {
+    opacity: 0;
   }
-  to{
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100%{
     width: 100;
+    opacity: 1;
   }
 }
 
 #code2 {
-  animation: code2 6s infinite;
-  animation-delay: 3s;
+  animation: code2 3s infinite ease-in-out;
 }
 
 @keyframes code2 {
-  from{
+
+  0% {
     width: 0px;
   }
-  to{
-    width: 100;
+  100%{
+    width: 200;
+    opacity: 1;
   }
 }
+
+
+
 
 
 @media screen and (max-width: 800px) {

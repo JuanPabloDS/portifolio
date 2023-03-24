@@ -73,7 +73,7 @@ float: right;
 list-style: none;
 display: flex;
 position: fixed;
-z-index:9;
+z-index: 99; 
 top: 0;
 width: 100vw;
 height: 100%;
@@ -461,15 +461,18 @@ animation: blink 0.7s infinite;
   background-color: red;
   position: relative;
   border-radius: 50%;
+  z-index: -1; 
+
 }
 
 .foto::before{
   content: '';
   position: absolute;
-  inset: -10px 140px;
+  inset: -0px 140px;
   background: linear-gradient(315deg, #0bc7a0, #102d33 );
   transition: 0.5s;
   animation: animate 4s linear infinite;
+  z-index: -1; 
 }
 .foto::hover::before{
   inset: -20px 0px ;
@@ -488,10 +491,11 @@ animation: blink 0.7s infinite;
 .foto img {
   width: 400px;
   height: 400px;
+  border-radius: 50%;
 }
 
 .sobre {
-  width: 500px;
+  width: 50%;
   height: 400px;
   background-color: blue;
 }

@@ -496,11 +496,10 @@ animation: blink 0.7s infinite;
 }
 .content{
   position: absolute;
-  inset: 6px;
+  inset: 30px;
+  border: 6px solid black;
   z-index: 3;
   border-radius: 50%;
-  overflow: hidden;
-
 }
 
 .content img {
@@ -509,6 +508,7 @@ animation: blink 0.7s infinite;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  overflow: hidden;
 }
 
 .sobre {

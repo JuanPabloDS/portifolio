@@ -496,7 +496,7 @@ animation: blink 0.7s infinite;
 }
 .content{
   position: absolute;
-  inset: 6px;
+  inset: 7px;
   z-index: 3;
   border-radius: 50%;
   overflow: hidden;

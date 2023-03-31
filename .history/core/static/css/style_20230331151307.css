@@ -550,15 +550,4 @@ animation: blink 0.7s infinite;
 
 .tecnologia {
   background-color: #0bc7a0;
-  height: 808px;
-  display: flex;
-  flex-direction: row ;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 10%;
-  margin-bottom: 200px;
 }
-

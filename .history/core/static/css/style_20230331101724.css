@@ -442,7 +442,7 @@ animation: blink 0.7s infinite;
 
 
 .perfil {
-  height: 100%;
+  height: 1000px;
   width: 100%;
   display: flex;
   flex-direction: row ;
@@ -452,7 +452,6 @@ animation: blink 0.7s infinite;
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 10%;
-  margin-bottom: 200px;
 
 }
 
@@ -464,7 +463,7 @@ animation: blink 0.7s infinite;
   border-radius: 50%;
   z-index: -1;
   overflow: hidden;
-  filter: drop-shadow(0 1.6rem 1.6rem rgba(51, 51, 51, 0.25));
+
 }
 
 .foto::before{
@@ -515,9 +514,7 @@ animation: blink 0.7s infinite;
 .sobre {
   width: 50%;
   height: 400px;
-  color: #1a1c1d;
-  text-align: justify;
-  letter-spacing: 0.02rem;
+  background-color: rgb(85, 206, 253);
 }
 
 .sm {
@@ -526,21 +523,3 @@ animation: blink 0.7s infinite;
   letter-spacing: 0.02rem;
   color: #0bc7a0;
 }
-
-@media screen and (max-width: 800px) {
-  .foto {
-    width: 300px;
-    height: 300px;
-    margin: auto;
-  }
-  .sobre {
-    width: 100%;
-    height: 400px;
-    color: #1a1c1d;
-    text-align: justify;
-    letter-spacing: 0.02rem;
-  }
-
-}
-
-/*! Fim Perfil */

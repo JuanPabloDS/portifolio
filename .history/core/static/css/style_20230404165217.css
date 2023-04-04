@@ -563,7 +563,7 @@ animation: blink 0.7s infinite;
 }
 
 .linguagens {
-  margin-top: 150px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -647,12 +647,7 @@ animation: blink 0.7s infinite;
   transform-origin: right;
   transform: skewY(45deg);
   transition: 0.5s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.5;
 }
-
 
 .linguagens img {
   height: 20px;

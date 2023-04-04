@@ -567,6 +567,7 @@ animation: blink 0.7s infinite;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 50px;
 
 }
 

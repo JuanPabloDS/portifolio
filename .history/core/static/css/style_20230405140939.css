@@ -16,22 +16,6 @@ scrollbar-color: #454a4d #202324;
 overflow: hidden;
 }
 
-h2 {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  font-weight: 800;
-  letter-spacing: 0.02rem;
-  color: #414755;
-}
-
-p {
-  color: #4d4d4d;
-  font-size: clamp(16px, 1vw, 21px);
-  line-height: 1.5;
-  letter-spacing: 0.02rem;
-
-}
-
 main{
   margin: auto;
   width: 80%;
@@ -75,7 +59,6 @@ background: #011e24;
 height: 73px;
 position: fixed;
 width: 100%;
-z-index: 100;
 }
 
 
@@ -90,7 +73,7 @@ float: right;
 list-style: none;
 display: flex;
 position: fixed;
-z-index: 1000; 
+z-index: 99; 
 top: 0;
 width: 100vw;
 height: 100%;
@@ -170,7 +153,7 @@ to {
 
 .menu-icon {
 position: fixed;
-z-index:100;
+z-index:10;
 top:0;
 margin-top: 20px;
 left: 80%;
@@ -268,14 +251,12 @@ padding-left: 10px;
 }
 .apresentacao-p p {
 margin-bottom: 20px;
-color: #fff;
 }
 .apresentacao-p h2 {
 font-weight: 600;
-color: #fff;
 }
 
-#h2 {
+.h2 {
 color: #0bc7a0;
 }
 
@@ -326,7 +307,6 @@ bottom: 0;
 left: 0;
 width: 50px;
 top: 40%;
-z-index: 100;
 }
 
 .icons img{
@@ -576,14 +556,17 @@ animation: blink 0.7s infinite;
   justify-content: start;
   padding-left: 10%;
   padding-right: 10%;
+  padding-top: 10%;
   margin-bottom: 200px;
-  padding-top: 30px;
 }
 
-.coluna {
-  margin-bottom: 70px;
+.tecnologia h2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 0.02rem;
+  color: #414755;
 }
-
 
 .linguagens {
   margin-top: 150px;
@@ -605,7 +588,7 @@ animation: blink 0.7s infinite;
   position: relative;
   list-style: none;
   width: 180px;
-  background: var(--clr) ;
+  background: #3e3f46 ;
   padding: 15px;
   transition: 0.5s;
   z-index: calc(1 * var(--i));
@@ -622,7 +605,7 @@ animation: blink 0.7s infinite;
   left: -40px;
   width: 40px;
   height: 100%;
-  background: var(--clr);
+  background: #3e3f46;
   filter: brightness(0.7);
   transform-origin: right;
   transform: skewY(45deg);
@@ -639,7 +622,7 @@ animation: blink 0.7s infinite;
   top: -40px;
   width: 100%;
   height: 40px;
-  background: var(--clr);
+  background: #3e3f46;
   filter: brightness(0.9);
   transform-origin: bottom;
   transform: skewX(45deg);
@@ -651,12 +634,11 @@ animation: blink 0.7s infinite;
 }
 .linguagens ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #999;
   display: block;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   transition: 0.5s;
-
 }
 .linguagens ul li:hover a {
   color: #fff;
@@ -677,6 +659,7 @@ animation: blink 0.7s infinite;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.5;
 }
 
 

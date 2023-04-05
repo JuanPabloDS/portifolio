@@ -75,7 +75,6 @@ background: #011e24;
 height: 73px;
 position: fixed;
 width: 100%;
-z-index: 100;
 }
 
 
@@ -326,7 +325,6 @@ bottom: 0;
 left: 0;
 width: 50px;
 top: 40%;
-z-index: 100;
 }
 
 .icons img{

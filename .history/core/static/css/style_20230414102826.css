@@ -844,10 +844,6 @@ border-radius: 4px 0px 18px;
   height: 30px;
 }
 
-.margin-img{
-  float: right;
-}
-
 @media (min-width: 576px){
   .col-sm-6 {
   -ms-flex: 0 0 50%;

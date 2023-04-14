@@ -790,8 +790,8 @@ animation: blink 0.7s infinite;
 }
 
 .card-body-img {
-  width: 350px;
-  height: 200px;
+  width: 400px;
+  height: 250px;
   margin: auto;
   margin-top: 50px;
   border-radius: 10PX;
@@ -800,7 +800,7 @@ animation: blink 0.7s infinite;
 }
 
 .card-p {
-  height: 130px;
+  height: 100px;
   width: 100%;
 }
 
@@ -842,10 +842,6 @@ border-radius: 4px 0px 18px;
 .icones img {
   width: 30px;
   height: 30px;
-}
-
-.margin-img{
-  float: right;
 }
 
 @media (min-width: 576px){

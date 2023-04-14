@@ -845,7 +845,7 @@ border-radius: 4px 0px 18px;
 }
 
 .margin-img{
-  float: right;
+  padding-left: 100%;
 }
 
 @media (min-width: 576px){

@@ -768,7 +768,7 @@ animation: blink 0.7s infinite;
   padding-bottom: 15px;
   padding-top: 15px;
   width: 550px;
-  height: 490px;
+  height: 461px;
   margin-bottom: 70px;
 
 }
@@ -790,18 +790,13 @@ animation: blink 0.7s infinite;
 }
 
 .card-body-img {
-  width: 350px;
-  height: 200px;
+  width: 400px;
+  height: 250px;
   margin: auto;
   margin-top: 50px;
   border-radius: 10PX;
   margin-bottom: 20px;
   box-shadow: 15px -16px teal;
-}
-
-.card-p {
-  height: 130px;
-  width: 100%;
 }
 
 .rows{
@@ -842,10 +837,6 @@ border-radius: 4px 0px 18px;
 .icones img {
   width: 30px;
   height: 30px;
-}
-
-.margin-img{
-  float: right;
 }
 
 @media (min-width: 576px){

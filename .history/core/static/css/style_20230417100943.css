@@ -863,19 +863,7 @@ border-radius: 4px 0px 18px;
 
 @media (max-width: 1000px){
   .icones img {
-    width: 20px;
-    height: 20px;
-  }
-
-  .col-sm-6 {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 429px;
-    max-height: 497px;
-
-  }
-
-  .card-text {
-    font-size: clamp(13px, 1vw, 21px);
+    width: 3vw;
+    height: 3vw;
   }
 }

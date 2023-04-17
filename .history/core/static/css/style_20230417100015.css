@@ -849,7 +849,7 @@ border-radius: 4px 0px 18px;
 }
 
 .link svg {
-  padding-bottom: 2px;
+  padding-bottom: 5px;
 }
 
 @media (min-width: 576px){
@@ -859,23 +859,4 @@ border-radius: 4px 0px 18px;
   max-width: 550px;
   max-height: 550px;
   min-width: 50%s;}
-}
-
-@media (max-width: 1000px){
-  .icones img {
-    width: 20px;
-    height: 20px;
-  }
-
-  .col-sm-6 {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 429px;
-    max-height: 497px;
-
-  }
-
-  .card-text {
-    font-size: clamp(13px, 1vw, 21px);
-  }
 }

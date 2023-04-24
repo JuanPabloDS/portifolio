@@ -104,6 +104,8 @@ transition: transform 0.3s ease-in;
 
 .span {
 color: white;
+
+margin-left: 10%;
 }
 
 .span-cor{

@@ -20,7 +20,7 @@ overflow: hidden;
 h2 {
   font-size: 2.25rem;
   line-height: 2.5rem;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: 0.02rem;
   color: #e2e9ff;
 }
@@ -612,9 +612,7 @@ animation: blink 0.7s infinite;
     width: 500px;
     height: 500px;
   }
-  h2 {
-    font-size: clamp(30px, 8vw, 50px);
-  }
+  
 }
 
 /*! Fim Perfil */

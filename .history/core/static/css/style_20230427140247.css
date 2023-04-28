@@ -20,7 +20,7 @@ overflow: hidden;
 h2 {
   font-size: 2.25rem;
   line-height: 2.5rem;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: 0.02rem;
   color: #e2e9ff;
 }
@@ -264,10 +264,7 @@ color: white;
 text-align: justify;
 padding-left: 10px;
 }
-.apresentacao-p p {
-margin-bottom: 20px;
-color: #fff;
-}
+
 .apresentacao-p h2 {
 line-height: 1.0;
 font-weight: 600;
@@ -276,14 +273,13 @@ text-align: left;
 }
 
 #h2 {
-  color: #fff;
+color: #0bc7a0;
 margin-bottom: 1rem;
 font-weight: 600;
 }
 
 .animated {
   margin-left: 10px;
-  color: #0bc7a0;
 }
 
 .show{
@@ -294,7 +290,7 @@ margin-top: 11vw;
 width: 100%;
 }
 
-#nome {
+.nome {
 color: #0bc7a0;
 font-weight: 600;
 font-size: inherit;
@@ -438,7 +434,6 @@ animation: code2 3s infinite ease-in-out;
 }
 .apresentacao-p h2 {
   font-size: 1.5rem;
-  line-height: 0.8;
 }
 .imagem svg {
   width:400px;
@@ -462,18 +457,6 @@ animation: blink 0.7s infinite;
 100% {
   opacity: 0;
 }
-}
-@media screen and (min-width: 1000px) {
-  
-  .svgg {
-    width: 350px;
-  }
-}
-@media screen and (min-width: 1100px) {
-  
-  .svgg {
-    width: 400px;
-  }
 }
 @media screen and (min-width: 1200px) {
   
@@ -602,19 +585,6 @@ animation: blink 0.7s infinite;
     letter-spacing: 0.02rem;
   }
 
-}
-
-@media screen and (min-width: 1200px) {
-  .sobre p {
-    font-size: clamp(16px, 1vw, 21px);
-  }
-  .foto {
-    width: 500px;
-    height: 500px;
-  }
-  h2 {
-    font-size: clamp(30px, 8vw, 50px);
-  }
 }
 
 /*! Fim Perfil */

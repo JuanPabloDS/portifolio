@@ -513,7 +513,7 @@ animation: blink 0.7s infinite;
   justify-content: space-between;
   padding-top: 10%;
   background-color: #151b1f;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 
 }
 
@@ -588,16 +588,6 @@ animation: blink 0.7s infinite;
   color: #0bc7a0;
 }
 
-@media screen and (max-width: 1000px){
-.sobre {
-  width: 100%;
-  color: #1a1c1d;
-  text-align: justify;
-  letter-spacing: 0.02rem;
-  padding-top: 30px;
-}
-}
-
 @media screen and (max-width: 800px) {
   .foto {
     width: 300px;
@@ -631,9 +621,6 @@ animation: blink 0.7s infinite;
 
 /*! Linguagens e Tecnologias */
 
-.tec {
-  padding-left: 10px;
-}
 
 .tecnologia {
   display: flex;
@@ -757,9 +744,6 @@ animation: blink 0.7s infinite;
 
 /*! Portifolio */
 
-.projetos{
-  margin-left: 10px;
-}
 
 .portifolio{
   display: flex;
@@ -808,7 +792,6 @@ animation: blink 0.7s infinite;
   z-index: 2;
   margin-right: 10px;
   margin-top: 20px;
-  text-decoration-line: none;
 }
 
 .bn39:hover {
@@ -968,31 +951,6 @@ border-radius: 4px 0px 18px;
     margin-bottom: 40px;
   }
 }
-
-@media (max-width: 800px){
-  .filter img{
-    width: 50px;
-    height: 50px;
-  }
-  .bn39 {
-    background-image: linear-gradient(135deg, #0bc7a0, #011e24);
-    border-radius: 6px;
-    box-sizing: border-box;
-    color: #ffffff;
-    display: block;
-    height: 30px;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 2px;
-    position: relative;
-    text-decoration: none;
-    width: 97px;
-    z-index: 2;
-    margin-right: 10px;
-    margin-top: 12px;
-  }
-}
-
 
 /*! Fim Portifolio */
 

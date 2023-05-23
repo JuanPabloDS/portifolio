@@ -53,6 +53,19 @@ class MobileNavbar {
   mobileNavbar.init();
 
 
+function closeMenu(){
+    const menu = document.querySelector(".mobile-menu");
+    const menuEx = document.querySelector(".mobile-menu-ex");
+    const navList = document.querySelector(".nav-list");
+    const body = document.querySelector("body")
+
+    menu.classList.remove("active")
+    menuEx.classList.remove("active")
+    navList.classList.remove("active")
+    body.classList.remove("hidden")
+    mobileNavbar.animateLinks()
+  }
+
 // TypeWriter
 
 'use strict';
@@ -61,8 +74,6 @@ class MobileNavbar {
 
 const clima = document.getElementById("change")
 const fill = clima.getAttribute("fill")
-
-console.log(fill)
 
 
 var colors = ["#a09fa5", "#a09fa5"];//Array com as cores, pode adicionar contas quiser

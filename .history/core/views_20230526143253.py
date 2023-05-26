@@ -24,11 +24,11 @@ class IndexView(TemplateView):
                     values = Projeto.objects.filter(
                         Q(filtro__nome=query)
                     )
-                print(values)
+                    print('asdasd')
 
 
             context = {
-                'projetos': values,
+                'tecnologia': values,
 
             }
 

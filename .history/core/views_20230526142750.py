@@ -21,14 +21,14 @@ class IndexView(TemplateView):
                 query = self.request.GET.get("search")
 
                 if not query == 'Todos':
-                    values = Projeto.objects.filter(
-                        Q(filtro__nome=query)
+                     if query.isdigit():
+                        values = Projeto.objects.filter(
+                            Q(filtro_nome=query)
                     )
-                print(values)
 
 
             context = {
-                'projetos': values,
+                'tecnologia': values,
 
             }
 

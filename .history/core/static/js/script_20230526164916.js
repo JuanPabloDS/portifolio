@@ -111,7 +111,7 @@ main();
 
 // Button selecionado
 
-function changeButto(b1, b2, b3) {
+function changeButton(b1, b2, b3) {
 
 
   const buttonSelect1 = document.getElementById(b1);
@@ -158,5 +158,5 @@ document.getElementById("button-select3").addEventListener("click", function() {
   console.log("Valor do parametro1:", parametro1);
 });
 
-function changeButton
+
 

@@ -110,8 +110,11 @@ main();
 
 
 // Button selecionado
+buttonSelect1.style.background = '';
+  buttonSelect2.style.background = '';
+  buttonSelect3.style.background = '';
 
-function changeButto(b1, b2, b3) {
+function changeButton(b1, b2, b3) {
 
 
   const buttonSelect1 = document.getElementById(b1);
@@ -146,7 +149,7 @@ document.getElementById("button-select2").addEventListener("click", function() {
   var urlParams = new URLSearchParams(window.location.search)
   var parametro1 = urlParams.get('search');
 
-  if (parametro1 == 'Backend')
+  if (urlParams == 'Backend')
     console.log("Valor do parametro2:", parametro1);
 
 });
@@ -158,5 +161,5 @@ document.getElementById("button-select3").addEventListener("click", function() {
   console.log("Valor do parametro1:", parametro1);
 });
 
-function changeButton
+
 

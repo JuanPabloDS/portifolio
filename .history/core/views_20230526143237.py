@@ -23,12 +23,12 @@ class IndexView(TemplateView):
                 if not query == 'Todos':
                     values = Projeto.objects.filter(
                         Q(filtro__nome=query)
+                        print('asdasd')
                     )
-                print(values)
 
 
             context = {
-                'projetos': values,
+                'tecnologia': values,
 
             }
 

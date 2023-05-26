@@ -28,7 +28,7 @@ class IndexView(TemplateView):
 
 
             context = {
-                'projetos': values,
+                'tecnologia': values,
 
             }
 

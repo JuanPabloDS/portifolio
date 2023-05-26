@@ -54,7 +54,7 @@ class Projeto(Base):
     imagem = StdImageField('imagem',upload_to=get_file_path)
     url = models.CharField(max_length=250)
     git = models.CharField(max_length=250)
-    tecnologias = models.ManyToManyField(Tecnologia)
+    tecnologias = models.ManyToManyField(Tecnologia, on_delete=models.CASCADE)
     filtro = models.ForeignKey(Filtros, on_delete=models.CASCADE)
 
 

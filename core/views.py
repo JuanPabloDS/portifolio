@@ -20,10 +20,15 @@ class IndexView(TemplateView):
 
                 query = self.request.GET.get("search")
 
-                if not query == 'Todos':
+                if query == 'Backend':
                     values = Projeto.objects.filter(
                         Q(filtro__nome=query)
                     )
+                elif query == 'Frontend':
+                    values = Projeto.objects.filter(
+                        Q(filtro__nome=query)
+                    )
+
                 print(values)
 
 

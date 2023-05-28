@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    new TypeIt(".animated", {
+    new TypeIt(".animate", {
         speed: 150,
         loop: true
     }).type('Front-end.', {delay: 700}).delete(11)

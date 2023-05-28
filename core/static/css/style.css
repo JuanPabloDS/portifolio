@@ -55,6 +55,14 @@ main{
 
 }
 
+/*! Transição */
+
+.elemento {
+  opacity: 0;
+  animation: fadeInUp 2.0s forwards;
+}
+/*! Fim Transição */
+
 /*! Menu */
 
 a {
@@ -292,7 +300,7 @@ margin-bottom: 1rem;
 font-weight: 600;
 }
 
-.animated {
+.animate {
   margin-left: 10px;
   color: #0bc7a0;
 }
@@ -350,7 +358,12 @@ z-index: 100;
 .icons img{
 width: 50px;
 height: 50px;
-margin-bottom: 5px;
+margin-bottom: 10px;
+transition: transform 0.2s;
+}
+
+.icons img:hover {
+  transform: scale(1.4);
 }
 
 /* SVG */
@@ -537,6 +550,11 @@ animation: blink 0.7s infinite;
   z-index: 1;
   overflow: hidden;
   filter: drop-shadow(0 1.6rem 1.6rem rgba(51, 51, 51, 0.25));
+  transition: transform 0.2s; /* Adiciona uma transição suave */
+}
+
+.foto:hover {
+  transform: scale(1.09);
 }
 
 .foto::before{
@@ -841,9 +859,6 @@ animation: blink 0.7s infinite;
   background: transparent;
 }
 
-#button-select1 {
-  background: transparent;
-}
 
 
 .all{
@@ -855,10 +870,15 @@ animation: blink 0.7s infinite;
 .col-sm-6 {
   padding-bottom: 15px;
   padding-top: 15px;
-  width: 550px;
+  width: 650px;
   height: 490px;
-  margin-bottom: 70px;
+  margin-bottom: 84px;
+  transition: transform 0.2s;
+  max-width: 650px;
 
+}
+.col-sm-6:hover{
+  transform: scale(1.04);
 }
 
 .card{
@@ -885,6 +905,11 @@ animation: blink 0.7s infinite;
   border-radius: 10PX;
   margin-bottom: 20px;
   box-shadow: 15px -16px teal;
+  transition: transform 0.2s;
+}
+
+.card-body-img:hover {
+  transform: scale(1.09); /* Aumenta a escala da imagem em 0.9 vezes */
 }
 
 .card-p {
@@ -900,14 +925,10 @@ animation: blink 0.7s infinite;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  justify-content: start;
+  justify-content: space-between;
 
 }
 
-.div-h5{
-
-
-}
 
 .div-h5 h5 {
   z-index: 2;
@@ -931,7 +952,22 @@ border-radius: 4px 0px 18px;
 .icones img {
   width: 25px;
   height: 25px;
+  transition: transform 0.2s;
 }
+
+.icones img:hover {
+  width: 25px;
+  height: 25px;
+  transform: scale(1.5);
+}
+
+.link{
+  transition: transform 0.2s;
+}
+.link:hover {
+  transform: scale(1.1);
+}
+
 
 .margin-img{
   float: right;
@@ -941,14 +977,7 @@ border-radius: 4px 0px 18px;
   padding-bottom: 2px;
 }
 
-@media (min-width: 576px){
-  .col-sm-6 {
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%s;
-  max-width: 676px;
-  max-height: 550px;
-  min-width: 500px;}
-}
+
 
 @media (max-width: 1000px){
   .icones img {
@@ -1100,6 +1129,173 @@ border-radius: 4px 0px 18px;
   
 }
 
+/*!  */
+
+.card {
+  overflow: visible;
+  width: 550px;
+  height: 580px;
+  margin-bottom: 30px;
+}
+
+.contents {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  border-radius: 5px;
+}
+
+.front, .back {
+  background-color: #151515;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.back::before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 160px;
+  height: 160%;
+  background: linear-gradient(90deg, transparent, #0bc7a0, #0bc7a0, #0bc7a0, #0bc7a0, transparent);
+  animation: rotation_481 5000ms infinite linear;
+}
+
+.back-content {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  background-color: #0e0d0d;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 15px;
+}
+
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  0% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.front {
+  transform: rotateY(180deg);
+  color: white;
+}
+
+.front .front-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.front-content .badge {
+  background-color: #00000055;
+  padding: 2px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  width: fit-content;
+}
+
+.description {
+  box-shadow: 0px 0px 10px 5px #00000088;
+  width: 100%;
+  padding: 10px;
+  background-color: #00000099;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 11px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title p {
+  width: 50%;
+}
+
+.card-footer {
+  color: #ffffff88;
+  margin-top: 5px;
+  font-size: 8px;
+}
+
+
+
+.circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #ffbb66;
+  position: relative;
+  filter: blur(15px);
+  animation: floating 2600ms infinite linear;
+}
+
+#bottom {
+  background-color: #ff8866;
+  left: 50px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  animation-delay: -800ms;
+}
+
+#right {
+  background-color: #ff2233;
+  left: 160px;
+  top: -80px;
+  width: 30px;
+  height: 30px;
+  animation-delay: -1800ms;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 
 /*! Fim Portifolio */
 
@@ -1139,11 +1335,20 @@ border-radius: 4px 0px 18px;
   justify-content: center;
   align-items: center;
   background-color: #27333b;
+  transition: transform 0.2s;
+}
+.contato-icon div:hover {
+  transform: scale(1.5);
 }
 
 .contato-icon img {
   width: 25px;
   height: 25px;
+  transition: transform 0.2s;
+}
+
+.contato-icon img:hover {
+  transform: scale(1.5);
 }
 
 @media (max-width: 800px){

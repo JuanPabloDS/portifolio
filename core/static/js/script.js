@@ -111,52 +111,40 @@ main();
 
 // Button selecionado
 
-function changeButto(b1, b2, b3) {
+function changeButton() {
 
 
-  const buttonSelect1 = document.getElementById(b1);
-  const buttonSelect2 = document.getElementById(b2);
+  const buttonSelect1 = document.getElementById("button-select1");
+  const buttonSelect2 = document.getElementById("button-select2");
   const buttonSelect3 = document.getElementById("button-select3");
 
-  b1.style.background = '';
-  b2.style.background = '';
-  b3.style.background = '';
+  buttonSelect1.style.background = '';
+  buttonSelect2.style.background = '';
+  buttonSelect3.style.background = '';
 
 
-  var idDoBotao = event.target.id;
-  buttonSelect = document.getElementById(idDoBotao);
-  buttonSelect.style.background = 'transparent';
-  console.log("ID do botão: " + idDoBotao);
+  var url = window.location.href;
+
+  // Criar um objeto URL para obter os parâmetros
+  var urlObj = new URL(url);
+
+  // Obter o valor do parâmetro desejado
+  var parametroValor = urlObj.searchParams.get('search');
+
+  if (parametroValor == 'Backend'){
+    buttonSelect2.style.background = 'transparent';
+  }
+  else if (parametroValor == 'Frontend'){
+    buttonSelect3.style.background = 'transparent';
+    
+  } else {
+    buttonSelect1.style.background = 'transparent';
+  }
 
 }
 
-const buttonSelect1 = document.getElementById("button-select1");
-const buttonSelect2 = document.getElementById("button-select2");
-const buttonSelect3 = document.getElementById("button-select3");
+changeButton()
 
-document.getElementById("button-select1").addEventListener("click", function() {
-  var urlParams = new URLSearchParams(window.location.search)
-  if (urlParams == 'Backend')
-    console.log("Valor do parametro1:", parametro1);
 
-  console.log("Valor do parametro1:", parametro1);
-});
 
-document.getElementById("button-select2").addEventListener("click", function() {
-  var urlParams = new URLSearchParams(window.location.search)
-  var parametro1 = urlParams.get('search');
-
-  if (parametro1 == 'Backend')
-    console.log("Valor do parametro2:", parametro1);
-
-});
-
-document.getElementById("button-select3").addEventListener("click", function() {
-  var urlParams = new URLSearchParams(window.location.search)
-  var parametro1 = urlParams.get('search');
-
-  console.log("Valor do parametro1:", parametro1);
-});
-
-function changeButton
-
+// Transição

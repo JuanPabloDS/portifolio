@@ -563,7 +563,9 @@ animation: code2 3s infinite ease-in-out;
   border-radius: 50%;
   
 }
-
+  .x-hidden{
+    display: none;
+  }
   .x-hidden::before,
         .x-hidden::after {
             content: "";
@@ -592,8 +594,8 @@ animation: code2 3s infinite ease-in-out;
   position: absolute;
   min-width: 160px;
   z-index: 1;
-  bottom: 115%;
-  right: -118%;
+  bottom: 103%;
+  right: -134%;
 }
 
 .dropdown-content a {

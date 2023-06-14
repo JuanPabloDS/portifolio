@@ -529,7 +529,6 @@ animation: code2 3s infinite ease-in-out;
     z-index: 999;
     left: 80%;
     bottom: 10%;
-    padding-right: 2px;
 }
   .btn-hidden {
     background-color: #0bc7a0;
@@ -544,8 +543,6 @@ animation: code2 3s infinite ease-in-out;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 50%;
-    width: 42px;
-  height: 41px;
 
 }
 .circo-hidden{
@@ -561,27 +558,8 @@ animation: code2 3s infinite ease-in-out;
   width: 4px;
   margin-left: 5px;
   border-radius: 50%;
-  
+  display: none;
 }
-
-  .x-hidden::before,
-        .x-hidden::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 20px;
-            height: 2px;
-            background-color: white;
-        }
-
-        .x-hidden::before {
-            transform: translate(-50%, -50%) rotate(45deg);
-        }
-
-        .x-hidden::after {
-            transform: translate(-50%, -50%) rotate(-45deg);
-        }
 
 .active-hidden{
 
@@ -592,8 +570,8 @@ animation: code2 3s infinite ease-in-out;
   position: absolute;
   min-width: 160px;
   z-index: 1;
-  bottom: 115%;
-  right: -118%;
+  bottom: 103%;
+  right: -134%;
 }
 
 .dropdown-content a {

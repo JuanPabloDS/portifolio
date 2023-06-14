@@ -140,15 +140,20 @@
             <img src="{% static '/img/icons/instagram.png' %}" alt="">      
         </a>
     </div>
-    <div class="dropdown" id="menu">
-        <button class="btn-hidden" id="menu" onclick="toggleDropdown()">
-            <div class="circo-hidden">
-                <div class="pont-hidden"></div>
-                <div class="pont-hidden"></div>
-                <div class="pont-hidden"></div>
-                <div class=""></div>
-            </div>
-            <div class="dropdown-content" id="dropdownMenu">
+    <div class="menu-hidden" id="menu-hidden">
+        <div class="icons-hidden" id="icons-hidden">
+            <a href="" target="_blank" title="Git Hub">
+                <img src="{% static '/img/icons/github.png' %}" alt=""> 
+            </a>
+            <a href="" target="_blank" title="Linkdin">
+                <img src="{% static '/img/icons/linkedin.png' %}" alt="">
+            </a>
+            <a href="" target="_blank" title="Instagram">
+                <img src="{% static '/img/icons/instagram.png' %}" alt="">      
+            </a>
+        </div>
+        <button class="button-hidden" id="menu-toggle">
+            <div class="icons-hidden" id="icons-hidden">
                 <a href="" target="_blank" title="Git Hub">
                     <img src="{% static '/img/icons/github.png' %}" alt=""> 
                 </a>
@@ -159,6 +164,9 @@
                     <img src="{% static '/img/icons/instagram.png' %}" alt="">      
                 </a>
             </div>
+            <div class="menu-hidden-item" id="menu-hidden-item1"></div>
+            <div class="menu-hidden-item" id="menu-hidden-item2"></div>
+            <div class="menu-hidden-item" id="menu-hidden-item3"></div>
         </button>
     </div>
 </div>

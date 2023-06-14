@@ -529,14 +529,12 @@ animation: code2 3s infinite ease-in-out;
     z-index: 999;
     left: 80%;
     bottom: 10%;
-    padding-right: 2px;
 }
   .btn-hidden {
     background-color: #0bc7a0;
     border: none;
     color: white;
-    padding: 19px 9px;
-    padding-left: 6px;
+    padding: 20px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -544,47 +542,28 @@ animation: code2 3s infinite ease-in-out;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 50%;
-    width: 42px;
-  height: 41px;
-
+    height: 100%;
+    width: 100%;
 }
-.circo-hidden{
+
+
+.ul-hidden{
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   width: 100%;
-  height: 100%;
+  line-height: 8px;
+
 }
-.pont-hidden{
-  background-color: white;
-  height: 4px;
-  width: 4px;
-  margin-left: 5px;
-  border-radius: 50%;
-  
-}
-
-  .x-hidden::before,
-        .x-hidden::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 20px;
-            height: 2px;
-            background-color: white;
-        }
-
-        .x-hidden::before {
-            transform: translate(-50%, -50%) rotate(45deg);
-        }
-
-        .x-hidden::after {
-            transform: translate(-50%, -50%) rotate(-45deg);
-        }
-
-.active-hidden{
-
+.li-hidden{
+  font-size: 10px;
+  border: 0;
+margin: 0;
+outline: 0;
+padding: 0;
 }
 }
 .dropdown-content {
@@ -592,8 +571,8 @@ animation: code2 3s infinite ease-in-out;
   position: absolute;
   min-width: 160px;
   z-index: 1;
-  bottom: 115%;
-  right: -118%;
+  bottom: 103%;
+  right: -134%;
 }
 
 .dropdown-content a {

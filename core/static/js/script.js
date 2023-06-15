@@ -166,21 +166,27 @@ function hiddenButton(){
 
 }
 
-var menuToggle = document.getElementById('menu-toggle');
-var menu = document.getElementById('menu-hidden');
-var item1 = document.getElementById('menu-hidden-item1');
-var item2 = document.getElementById('menu-hidden-item2');
-var item3 = document.getElementById('menu-hidden-item3');
-var icons = document.getElementById('icons-hidden');
-var atrasoFecharMenu = 2000000;
+var menus = document.getElementById('menu-hidden');
+var circleId = document.getElementById('circle');
+var x = document.getElementsByClassName('x-hidden');
+var dropdownMenu = document.getElementById("dropdownMenu");
+
 
 // Abrir ou fechar o menu ao clicar no botão de alternância
-menuToggle.addEventListener('click', function() {
-  item1.style.display = item1.style.display === 'none' ? 'block' : 'none';
-  setTimeout(atrasoFecharMenu);
-  item3.style.display = item3.style.display === 'none' ? 'block' : 'none';
-  setTimeout(atrasoFecharMenu);
-  icons.style.display = item3.style.display === 'block' ? 'none' : 'block';
+menus.addEventListener('click', function() {
+  
+  
+
+  if (menus.classList.contains("x-hidden")){
+    menus.classList.remove("x-hidden");
+  } else {
+    menus.classList.add("x-hidden");
+  }
+  circleId.style.display = circleId.style.display === "none" ? "flex" : "none";
+
+  dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+
+
 
 });
 
@@ -189,18 +195,11 @@ document.addEventListener('click', function(event) {
   var targetElement = event.target;
 
   // Verificar se o clique ocorreu fora do menu
-  if (targetElement !== menuToggle && !menu.contains(targetElement)) {
-    setTimeout(atrasoFecharMenu);
-    item1.style.display = 'block';
-    setTimeout(atrasoFecharMenu);
-    item3.style.display = 'block';
-    setTimeout(atrasoFecharMenu);
-    icons.style.display = 'none';
+  if (targetElement !== menus && !circleId.contains(targetElement)) {
+    menus.classList.remove('x-hidden')
+    circleId.style.display = "flex"
+    dropdownMenu.style.display = "none"
+
+
   }
 });
-
-
-function toggleDropdown() {
-  var dropdownMenu = document.getElementById("dropdownMenu");
-  dropdownMenu.style.display = dropdownMenu.style.display === "none" ? "block" : "none";
-}

@@ -13,6 +13,7 @@ Contact:
 
     Email: [jpsevero30@hotmail.com]
     LinkedIn: [https://www.linkedin.com/in/juan-pablo-003233201]
+    Link: [https://portifoliojuanpablods.com.br]
 
 ## :rocket: Technologies
 

@@ -515,6 +515,7 @@ animation: code2 3s infinite ease-in-out;
   .apresentacao-p h2 {
     font-size: 1.5rem;
     line-height: 0.9;
+    margin-bottom: 9px;
   }
   .imagem svg {
     width:300px;
@@ -531,7 +532,7 @@ animation: code2 3s infinite ease-in-out;
   .dropdown {
     position: fixed;
     display: inline-block;
-    z-index: 999;
+    z-index: 1;
     left: 80%;
     bottom: 8%;
     padding-right: 2px;
@@ -589,6 +590,22 @@ animation: code2 3s infinite ease-in-out;
             transform: translate(-50%, -50%) rotate(-45deg);
         }
 
+        .delayed-animation {
+          animation-name: myAnimation;
+          animation-duration: 2s;
+          animation-delay: 0s; /* Atraso de 2 segundos */
+          animation-fill-mode: forwards;
+      }
+      
+      @keyframes myAnimation {
+          from {
+              opacity: 0;
+          }
+          to {
+              opacity: 1;
+          }
+      }
+
 }
 .dropdown-content {
   display: none;
@@ -596,7 +613,8 @@ animation: code2 3s infinite ease-in-out;
   min-width: 160px;
   z-index: 1;
   bottom: 115%;
-  right: -118%;
+  right: -114%;
+  margin-bottom: 1px;
 }
 
 .dropdown-content a {
@@ -810,7 +828,7 @@ animation: blink 0.7s infinite;
   .sobre {
     width: 100%;
     color: #1a1c1d;
-    text-align: justify;
+    text-align: center;
     letter-spacing: 0.02rem;
   }
 
@@ -966,6 +984,71 @@ animation: blink 0.7s infinite;
   height: 20px;
   width: 20px;
 }
+@media (max-width: 1000px){
+.coluna {
+  margin-bottom: 24px;
+}
+}
+
+@media (max-width: 800px){
+
+  .tecnologia {
+    text-align: center;
+  }
+  .linguagens ul li {
+    font-size: 12.5px;
+    width: 143px;
+    padding: 11px;
+
+  }
+  .coluna {
+    margin-bottom: 44px;
+  }
+  .linguagens ul li img {
+
+
+    top: -11px;
+    left: -35px;
+    width: 25px;
+    height: 100%;
+    
+  }
+}
+
+@media (max-width: 430px){
+
+
+  .linguagens ul li {
+    font-size: 11.5px;
+    width: 127px;
+    padding: 8px;
+
+  }
+  .linguagens ul li img {
+
+
+    top: -11px;
+    left: -35px;
+    width: 25px;
+    height: 100%;
+    
+  }
+  .coluna {
+    margin-bottom: 24px;
+  }
+}
+
+.tecnologia {
+  display: flex;
+  flex-direction: column ;
+  flex-wrap: wrap;
+  flex-flow: column wrap;
+  justify-content: start;
+  padding-top: 30px;
+  background-color: #0d1113;
+  padding-bottom: 100px;
+
+}
 
 
 /*! Fim Linguagens e Tecnologias */
@@ -1096,8 +1179,9 @@ animation: blink 0.7s infinite;
 
 .card-p {
   width: 100%;
-  height: 100px;
-  margin-bottom: 40px;
+  height: 300px;
+  overflow-y: auto;
+
 }
 
 .rows{
@@ -1178,7 +1262,7 @@ border-radius: 4px 0px 18px;
 .card {
   overflow: visible;
   width: 537px;
-  height: 542px;
+  height: 600px;
   margin-bottom: 84px;
   transition: transform 0.2s;
   margin-bottom: 30px;
@@ -1284,10 +1368,14 @@ border-radius: 4px 0px 18px;
   border-radius: 5px;
 }
 
+.card-text {
+  font-size: 16px;
+}
+
 @media (min-width: 1300px){
   .card{
     width: 597px;
-    height: 562px;
+    height: 606px;
   }
   }
 
@@ -1301,7 +1389,7 @@ border-radius: 4px 0px 18px;
 
   .card {
     max-width: 520px;
-    max-height: 497px;
+    max-height: 538px;
     margin-left: 0;
   }
 
@@ -1321,8 +1409,8 @@ border-radius: 4px 0px 18px;
 
   .card-p {
     width: 100%;
-    height: 115px;
-    margin-bottom: 40px;
+    height: 315px;
+    
   }
 
   .rows {
@@ -1333,38 +1421,48 @@ border-radius: 4px 0px 18px;
 @media (max-width: 767px){
 .card {
   max-width: 469px;
-  max-height: 487px;
+  max-height: 532px;
   min-width: 0;
 }
 
 }
-@media (max-width: 560px){
 
-  .card {
-    max-width: 407px;
-    max-height: 487px;
+  @media (max-width: 560px){
+  
+    .card {
+      max-width: 407px;
+      max-height: 522px;
+    }
   }
-}
-
-@media (max-width: 437px){
-
-  .card {
-    max-width: 379px;
-    max-height: 477px;
-
-
+  @media (max-width: 452px){
+  
+    .card {
+      max-width: 352px;
+      max-height: 512px;
+  
+  
+    }
   }
-}
-
-@media (max-width: 400px){
-
-  .card {
-    max-width: 329px;
-    max-height: 477px;
-
-
+  
+  @media (max-width: 437px){
+  
+    .card {
+      max-width: 362px;
+      max-height: 512px;
+  
+  
+    }
   }
-}
+  
+  @media (max-width: 400px){
+  
+    .card {
+      max-width: 329px;
+      max-height: 512px;
+  
+  
+    }
+  }
 
 @media (max-width: 380px){
 
@@ -1384,6 +1482,10 @@ border-radius: 4px 0px 18px;
     width: 50px;
     height: 50px;
   }
+  .portifolio {
+    padding-top: 0px;
+
+  }
   .bn39 {
     background-image: linear-gradient(135deg, #0bc7a0, #011e24);
     border-radius: 6px;
@@ -1401,6 +1503,12 @@ border-radius: 4px 0px 18px;
     margin-right: 10px;
     margin-top: 12px;
   }
+  .projetos{
+    text-align: center;
+  }
+  .filter {
+    justify-content: center;
+  }
   
 }
 
@@ -1410,21 +1518,8 @@ border-radius: 4px 0px 18px;
     height: 45px;
   }
   .bn39 {
-    background-image: linear-gradient(135deg, #0bc7a0, #011e24);
-    border-radius: 6px;
-    box-sizing: border-box;
-    color: #ffffff;
-    display: block;
-    height: 23px;
-    font-size: 12px;
+    font-size: 12.4px;
     font-weight: 600;
-    padding: 2px;
-    position: relative;
-    text-decoration: none;
-    width: 90px;
-    z-index: 2;
-    margin-right: 5px;
-    margin-top: 15px;
   }
   .div-h5 h5 {
     font-size: 14px;
@@ -1573,6 +1668,9 @@ border-radius: 4px 0px 18px;
   .contato {
     margin-bottom: 0;
   }
+  .cont {
+    text-align: center;
+  }
 }
 
 /*! Fim Contatos */
@@ -1588,9 +1686,7 @@ border-radius: 4px 0px 18px;
 
 @media (max-width: 1000px){
   
-  .coluna {
-    margin-bottom: 24px;
-  }
+  
   .linguagens {
     margin-top: 91px;
 

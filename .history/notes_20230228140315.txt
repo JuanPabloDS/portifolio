@@ -1,8 +1,0 @@
-Cores: bege claro, branco, laranja claro
-fundo:
-
-
-
-
-ideais:
-	Fundo com seguidor de movimento mouse

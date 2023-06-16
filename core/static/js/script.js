@@ -203,3 +203,15 @@ document.addEventListener('click', function(event) {
 
   }
 });
+
+document.getElementById("menu-hidden").addEventListener("click", function() {
+  var button = this;
+  
+  // Adiciona a classe para aplicar a animação com o atraso
+  button.classList.add("delayed-animation");
+  
+  // Remove a classe após o tempo total da animação (duração + atraso)
+  setTimeout(function() {
+      button.classList.remove("delayed-animation");
+  }, 1000); // Tempo total da animação (1s de duração + 2s de atraso)
+});
